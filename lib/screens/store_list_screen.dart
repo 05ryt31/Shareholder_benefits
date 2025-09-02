@@ -151,7 +151,7 @@ class _StoreListScreenState extends State<StoreListScreen> {
                       ),
                       child: Text(
                         '銘柄コード: ${widget.benefit.companyCode}',
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 12,
                           color: AppColors.onSurfaceSecondary,
                           fontWeight: FontWeight.w500,
@@ -178,7 +178,7 @@ class _StoreListScreenState extends State<StoreListScreen> {
                 const SizedBox(height: 12),
                 Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.schedule_outlined,
                       size: 16,
                       color: AppColors.warning,
@@ -209,7 +209,7 @@ class _StoreListScreenState extends State<StoreListScreen> {
             ),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.filter_list_outlined,
                   size: 20,
                   color: AppColors.primary,
@@ -301,7 +301,7 @@ class _StoreListScreenState extends State<StoreListScreen> {
       ),
       floatingActionButton: Container(
         decoration: BoxDecoration(
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
