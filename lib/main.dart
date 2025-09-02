@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'screens/home_screen.dart';
 import 'services/benefit_service.dart';
+import 'utils/app_theme.dart';
 
 void main() {
   runApp(const ShareholderBenefitApp());
@@ -17,11 +18,7 @@ class ShareholderBenefitApp extends StatelessWidget {
       create: (context) => BenefitService(),
       child: MaterialApp(
         title: '株主優待マップ',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-          useMaterial3: true,
-          fontFamily: 'NotoSansJP',
-        ),
+        theme: AppTheme.theme,
         localizationsDelegates: const [
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
