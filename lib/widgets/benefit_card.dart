@@ -203,7 +203,7 @@ class BenefitCard extends StatelessWidget {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.store_outlined,
                             size: 16,
                             color: AppColors.success,
@@ -211,7 +211,7 @@ class BenefitCard extends StatelessWidget {
                           const SizedBox(width: 6),
                           Text(
                             '${benefit.availableStores.length}店舗',
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 12,
                               color: AppColors.success,
                               fontWeight: FontWeight.w600,
@@ -236,7 +236,7 @@ class BenefitCard extends StatelessWidget {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.schedule_outlined,
                             size: 16,
                             color: AppColors.warning,
@@ -244,7 +244,7 @@ class BenefitCard extends StatelessWidget {
                           const SizedBox(width: 6),
                           Text(
                             benefit.validityPeriod.replaceAll('まで', ''),
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 12,
                               color: AppColors.warning,
                               fontWeight: FontWeight.w600,
