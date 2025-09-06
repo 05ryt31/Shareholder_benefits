@@ -161,7 +161,7 @@ class StoreCard extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 4),
                       child: Row(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.location_on_outlined,
                             size: 20,
                             color: AppColors.primary,
@@ -175,7 +175,7 @@ class StoreCard extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Icon(
+                          const Icon(
                             Icons.content_copy_outlined,
                             size: 18,
                             color: AppColors.onSurfaceSecondary,
@@ -192,7 +192,7 @@ class StoreCard extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 4),
                       child: Row(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.phone_outlined,
                             size: 20,
                             color: AppColors.success,
@@ -205,7 +205,7 @@ class StoreCard extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(width: 8),
-                          Icon(
+                          const Icon(
                             Icons.content_copy_outlined,
                             size: 18,
                             color: AppColors.onSurfaceSecondary,
@@ -217,7 +217,7 @@ class StoreCard extends StatelessWidget {
                   const SizedBox(height: 12),
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.schedule_outlined,
                         size: 20,
                         color: AppColors.warning,
@@ -240,7 +240,7 @@ class StoreCard extends StatelessWidget {
             Container(
               width: double.infinity,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [

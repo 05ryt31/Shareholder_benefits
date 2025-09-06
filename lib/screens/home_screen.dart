@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         flexibleSpace: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
@@ -70,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             height: 120,
             padding: const EdgeInsets.fromLTRB(20, 100, 20, 20),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -103,14 +103,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   hintStyle: TextStyle(
                     color: AppColors.onSurfaceSecondary.withOpacity(0.7),
                   ),
-                  prefixIcon: Icon(
+                  prefixIcon: const Icon(
                     Icons.search_rounded,
                     color: AppColors.primary,
                     size: 24,
                   ),
                   suffixIcon: _searchController.text.isNotEmpty
                       ? IconButton(
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.clear_rounded,
                             color: AppColors.onSurfaceSecondary,
                           ),
@@ -150,7 +150,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             color: AppColors.surfaceVariant,
                             borderRadius: BorderRadius.circular(60),
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.search_off_rounded,
                             size: 60,
                             color: AppColors.onSurfaceSecondary,
@@ -204,7 +204,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       floatingActionButton: Container(
         decoration: BoxDecoration(
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
